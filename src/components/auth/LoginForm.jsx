@@ -1,3 +1,4 @@
+import Link from 'react-router-dom'
 import Form from '../../UI/Form'
 import Input from '../../UI/Input'
 
@@ -29,10 +30,10 @@ export default function LoginForm({ userData, onSubmit, onChange }) {
 
 			<div className='login-links flex justify-evenly my-[2rem] w-[100%] text-[1.5rem] text-[var(--titleBg)]'>
 				<p className='forgot-password-link p-[.4rem]'>
-					<a href='/auth/forgot-password'>Zapomniałeś hasła?</a>
+					<Link to='/auth/forgot-password'>Zapomniałeś hasła?</Link>
 				</p>
 				<p className='signup-link p-[.4rem]'>
-					<a href='/auth/signup'>Zarejestruj się</a>
+					<Link to='/auth/signup'>Zarejestruj się</Link>
 				</p>
 			</div>
 		</Form>
