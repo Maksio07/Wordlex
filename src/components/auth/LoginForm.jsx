@@ -1,4 +1,4 @@
-import Link from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Form from '../../UI/Form'
 import Input from '../../UI/Input'
 
