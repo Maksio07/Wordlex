@@ -14,7 +14,7 @@ export default function UserProfileForm({
 }) {
 	return (
 		<form
-			className='profile__form flex flex-col items-center my-[6rem] w-max-[86rem] p-[1rem] w-[75rem] w-min-[75rem] h-[58rem] bg-[var(--mobileNavBg)] rounded-2xl max-[760px]:w-[56rem] max-[576px]:w-[46rem] max-[470px]:w-[38rem] max-[470px]:h-[66rem] max-[390px]:w-[34rem] max-[375px]:w-[30rem] max-[310px]:w-[26rem]'
+			className='profile__form flex flex-col items-center my-[6rem] w-max-[86rem] p-[1rem] w-[75rem] w-min-[75rem] h-[58rem] bg-[var(--mobileNavBg)] rounded-2xl max-[760px]:w-[56rem] max-[576px]:w-[46rem] max-[470px]:w-[38rem] max-[470px]:h-[72rem] max-[390px]:w-[34rem] max-[375px]:w-[30rem] max-[310px]:w-[26rem]'
 			onSubmit={updateUserData}>
 			<h3 className='my-[2rem] text-[2.6rem] font-medium text-center text-[var(--navLinks)]'>Twoje Dane</h3>
 			{error && <p className='absolute top-[10rem] text-[1.8rem] text-center text-red-600'>{error}</p>}

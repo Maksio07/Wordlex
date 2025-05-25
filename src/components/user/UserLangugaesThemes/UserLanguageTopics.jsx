@@ -30,7 +30,8 @@ export default function UserLanguageTopics() {
 	const [language, setLanguage] = useState('')
 	const [userWords, setUserWords] = useState('')
 	const { isLoading, error, sendRequest } = useHTTP()
-	const flagSrc = `/src/assets/flags/${languageId}.svg`
+	const flagSrc = '/flags/' + languageId + '-small.png'
+
 	let titleStyle = ''
 
 	if (currentModeCtx.themeMode === 'dark') {
@@ -121,7 +122,7 @@ export default function UserLanguageTopics() {
 							}>
 							Stwórz lub wybierz temat
 							<img
-								className='ml-5 w-[6rem] max-[560px]:w-[5rem] max-[375px]:w-[6rem]'
+								className='ml-5 w-[6rem] max-[560px]:w-[5rem] rounded-md max-[375px]:w-[6rem]'
 								src={flagSrc}
 								alt={`${languageId} Flag`}
 							/>

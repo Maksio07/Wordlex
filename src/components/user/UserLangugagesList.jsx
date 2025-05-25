@@ -20,9 +20,9 @@ export default function UserLanguageList({ languages, handleAddLanguageState, de
 					onClick={handleAddLanguageState}
 					type='button'
 					aria-label='Dodaj język'
-					className={'create flex items-center justify-start w-full h-full bg-[var(--createBtn)] text-[var(--navLinks)] rounded-[.8rem] text-[2.6rem] min-[375px]:justify-center' + titleStyle}>
+					className={'create flex flex-col items-center justify-center w-full h-full bg-[var(--createBtn)] text-[var(--navLinks)] rounded-[.8rem] text-[2.6rem] min-[375px]:justify-center' + titleStyle}>
 					<Plus width={'3.2rem'} height={'3.2rem'} fill={'var(--navLinks)'}/>
-					<span className='mr-[1rem] max-[375px]:ml-[3rem] max-[460px]:ml-[-.4rem]'></span>
+					<span className='mb-[1rem]'></span>
 					Dodaj Język
 				</button>
 			</li>
