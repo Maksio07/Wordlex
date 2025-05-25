@@ -118,7 +118,7 @@ export default function UserLanguageTopics() {
 							<img
 								className='ml-5 w-[6rem] max-[560px]:w-[5rem] max-[375px]:w-[6rem]'
 								src={`/src/assets/flags/${languageId}.svg`}
-								alt={`${languageId}  Flag`}
+								alt={`${languageId} Flag`}
 							/>
 						</h2>
 						{error && <p className='error-text my-[1.8rem] text-[2.4rem] ] text-center text-red-600'>{error}</p>}

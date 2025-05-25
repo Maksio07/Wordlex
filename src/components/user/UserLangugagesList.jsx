@@ -29,7 +29,7 @@ export default function UserLanguageList({ languages, handleAddLanguageState, de
 			{languages.length !== 0 &&
 				languages.map(language => {
 					const imageSize = window.innerWidth > 512 ? '-big.png' : '-small.png'
-					const bgImage = '../../../public/flags/' + language.languageId + imageSize
+					const bgImage = '/flags/' + language.languageId + imageSize
 
 					return (
 						<li
