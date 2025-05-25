@@ -19,7 +19,7 @@ export default function ForgotPassword() {
 	async function sendLink(e) {
 		e.preventDefault()
 
-		const resData = await sendRequest('http://localhost:8080/auth/forgot-password', {
+		const resData = await sendRequest('https://wordlex-api.onrender.com/auth/forgot-password', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',

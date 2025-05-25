@@ -45,7 +45,7 @@ export default function Login() {
 			setError('')
 		}
 
-		const resData = await sendRequest('http://localhost:8080/auth/login', {
+		const resData = await sendRequest('https://wordlex-api.onrender.com/auth/login', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',

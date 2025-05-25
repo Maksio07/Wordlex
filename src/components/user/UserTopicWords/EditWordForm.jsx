@@ -47,7 +47,7 @@ export default function EditWordForm({
 		}
 
 		const resData = await sendRequest(
-			`http://localhost:8080/users/${userId}/languages/${languageId}/topics/${topicId}`,
+			`https://wordlex-api.onrender.com/users/${userId}/languages/${languageId}/topics/${topicId}`,
 			{
 				method: 'POST',
 				headers: {

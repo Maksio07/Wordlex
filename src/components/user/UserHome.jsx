@@ -27,7 +27,7 @@ export default function UserHome({ id }) {
 	}
 
 	const loadLanguages = useCallback(async () => {
-		const resData = await sendRequest(`http://localhost:8080/users/${id}`, {})
+		const resData = await sendRequest(`https://wordlex-api.onrender.com/users/${id}`, {})
 
 		if (resData !== undefined) {
 			setUserName(resData.userName)
@@ -46,7 +46,7 @@ export default function UserHome({ id }) {
 	async function deleteLanguage(e) {
 		const languageId = e.target.closest('li').id
 
-		const resData = await sendRequest(`http://localhost:8080/users/${id}`, {
+		const resData = await sendRequest(`https://wordlex-api.onrender.com/users/${id}`, {
 			method: 'DELETE',
 			headers: {
 				'Content-Type': 'application/json',

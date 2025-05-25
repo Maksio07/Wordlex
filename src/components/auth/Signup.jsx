@@ -57,7 +57,7 @@ export default function Signup() {
 			setError('')
 		}
 
-		const resData = await sendRequest('http://localhost:8080/auth/signup', {
+		const resData = await sendRequest('https://wordlex-api.onrender.com/auth/signup', {
 			method: 'PUT',
 			headers: {
 				'Content-Type': 'application/json',

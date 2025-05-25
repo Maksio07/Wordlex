@@ -80,7 +80,7 @@ export default function UserLanguageTopics() {
 	}
 
 	const loadTopics = useCallback(async () => {
-		const resData = await sendRequest(`http://localhost:8080/users/${userId}/languages/${languageId}`, {})
+		const resData = await sendRequest(`https://wordlex-api.onrender.com/users/${userId}/languages/${languageId}`, {})
 
 		if (resData !== undefined) {
 			setTopics(resData.data[0].topics)

@@ -28,7 +28,7 @@ export default function EditTopicForm({
 			return new Error('Uzupełnij wszystkie pola.')
 		}
 
-		const resData = await sendRequest(`http://localhost:8080/users/${userId}/languages/${languageId}`, {
+		const resData = await sendRequest(`https://wordlex-api.onrender.com/users/${userId}/languages/${languageId}`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',

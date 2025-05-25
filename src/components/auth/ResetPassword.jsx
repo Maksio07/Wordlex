@@ -29,7 +29,7 @@ export default function ResetPassword() {
 			)
 		}
 
-		const resData = await sendRequest(`http://localhost:8080/auth/reset-password`, {
+		const resData = await sendRequest(`https://wordlex-api.onrender.com/auth/reset-password`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',

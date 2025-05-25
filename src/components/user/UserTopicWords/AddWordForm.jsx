@@ -36,7 +36,7 @@ export default function AddWordForm({ handleAddWordFormIsActive, topicId, langua
 		}
 
 		const resData = await sendRequest(
-			`http://localhost:8080/users/${userId}/languages/${languageId}/topics/${topicId}`,
+			`https://wordlex-api.onrender.com/users/${userId}/languages/${languageId}/topics/${topicId}`,
 			{
 				method: 'PUT',
 				headers: {

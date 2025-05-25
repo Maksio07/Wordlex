@@ -19,7 +19,7 @@ export default function UserProfile() {
 	const [confirmMessage, setConfirmMessage] = useState('')
 
 	const loadUser = useCallback(async () => {
-		const resData = await sendRequest(`http://localhost:8080/users/${userId}/profile`, {})
+		const resData = await sendRequest(`https://wordlex-api.onrender.com/users/${userId}/profile`, {})
 
 		if (resData !== undefined) {
 			setUserData(resData.data)
@@ -97,7 +97,7 @@ export default function UserProfile() {
 			setError('')
 		}
 
-		const resData = await sendRequest(`http://localhost:8080/users/${userId}/profile`, {
+		const resData = await sendRequest(`https://wordlex-api.onrender.com/users/${userId}/profile`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',

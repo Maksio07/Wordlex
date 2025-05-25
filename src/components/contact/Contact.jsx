@@ -39,7 +39,7 @@ export default function Contact() {
 			setError('')
 		}
 
-		const resData = await sendRequest('http://localhost:8080/contact', {
+		const resData = await sendRequest('https://wordlex-api.onrender.com/contact', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',

@@ -29,7 +29,7 @@ export default function UserTopicsList({
 	async function deleteTopic(e) {
 		e.preventDefault()
 
-		const resData = await sendRequest(`http://localhost:8080/users/${userId}/languages/${languageId}`, {
+		const resData = await sendRequest(`https://wordlex-api.onrender.com/users/${userId}/languages/${languageId}`, {
 			method: 'DELETE',
 			headers: {
 				'Content-Type': 'application/json',

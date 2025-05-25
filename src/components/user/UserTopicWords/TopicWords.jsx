@@ -43,7 +43,7 @@ export default function TopicWords({ topicId, userId, languageId }) {
 	}
 
 	const loadWords = useCallback(async () => {
-		const resData = await sendRequest(`http://localhost:8080/users/${userId}/languages/${languageId}/topics/${topicId}`)
+		const resData = await sendRequest(`https://wordlex-api.onrender.com/users/${userId}/languages/${languageId}/topics/${topicId}`)
 
 		if (resData !== undefined) {
 			setWords(resData.data.words)

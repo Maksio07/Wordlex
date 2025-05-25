@@ -33,7 +33,7 @@ export default function ChooseLanguage({ handleAddLanguageState, id }) {
 			return new Error('Wybierz język.')
 		}
 
-		const resData = await sendRequest(`http://localhost:8080/users/${id}`, {
+		const resData = await sendRequest(`https://wordlex-api.onrender.com/users/${id}`, {
 			method: 'PUT',
 			headers: {
 				'Content-Type': 'application/json',

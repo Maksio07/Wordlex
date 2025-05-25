@@ -10,7 +10,7 @@ export default function Logout({ mobileNavigationIsActive, handleMobileNavigatio
 
 	async function logoutUser() {
 		try {
-			const res = await fetch('http://localhost:8080/auth/logout', {
+			const res = await fetch('https://wordlex-api.onrender.com/auth/logout', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',

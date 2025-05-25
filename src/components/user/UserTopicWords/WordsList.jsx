@@ -18,7 +18,7 @@ export default function WordsList({ words, userId, languageId, topicId, handleEd
 		e.preventDefault()
 
 		const resData = await sendRequest(
-			`http://localhost:8080/users/${userId}/languages/${languageId}/topics/${topicId}`,
+			`https://wordlex-api.onrender.com/users/${userId}/languages/${languageId}/topics/${topicId}`,
 			{
 				method: 'DELETE',
 				headers: {
