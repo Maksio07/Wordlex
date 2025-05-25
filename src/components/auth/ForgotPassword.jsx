@@ -56,7 +56,7 @@ export default function ForgotPassword() {
 							id='email'
 							type='text'
 							minLength='4'
-							placeHolder='Wpisz email'
+							placeholder='Wpisz email'
 							onChange={handleUserEmail}
 						/>
 						<p className='m-[1rem] text-[1.4rem] text-center text-[var(--titleBg)]'>

@@ -64,7 +64,7 @@ export default function ResetPassword() {
 							id='newPassword'
 							type='password'
 							minLength='8'
-							placeHolder='Wpisz nowe hasło'
+							placeholder='Wpisz nowe hasło'
 							onChange={handleUserNewPassword}
 						/>
 						<p className='my-[1rem] text-[1.4rem] text-center text-[var(--titleBg)]'>Wpisz nowe hasło</p>

@@ -23,7 +23,7 @@ export default function SignupForm({ onSubmit, onChange, userData, confirmPasswo
 				type='text'
 				value={userData.email}
 				minLength='4'
-				placeHolder='Wpisz email'
+				placeholder='Wpisz email'
 				onChange={onChange}
 			/>
 			<Input
@@ -34,7 +34,7 @@ export default function SignupForm({ onSubmit, onChange, userData, confirmPasswo
 				type='password'
 				value={userData.password}
 				minLength='8'
-				placeHolder='Wpisz hasło'
+				placeholder='Wpisz hasło'
 				onChange={onChange}
 			/>
 			<Input
@@ -45,7 +45,7 @@ export default function SignupForm({ onSubmit, onChange, userData, confirmPasswo
 				type='password'
 				value={confirmPassword}
 				minLength='8'
-				placeHolder='Potwierdź hasło'
+				placeholder='Potwierdź hasło'
 				onChange={onChange}
 			/>
 		</Form>

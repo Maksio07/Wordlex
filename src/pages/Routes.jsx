@@ -39,15 +39,15 @@ export default function Routes() {
 					element: <Home />,
 				},
 				{
-					path: 'about-us',
+					path: '/about-us',
 					element: <AboutUsPage />,
 				},
 				{
-					path: 'contact',
+					path: '/contact',
 					element: <ContactPage />,
 				},
 				{
-					path: 'auth',
+					path: '/auth',
 					element: <AuthRoot />,
 					errorElement: <Error />,
 					children: [
