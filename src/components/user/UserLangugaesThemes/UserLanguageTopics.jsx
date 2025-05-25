@@ -30,6 +30,7 @@ export default function UserLanguageTopics() {
 	const [language, setLanguage] = useState('')
 	const [userWords, setUserWords] = useState('')
 	const { isLoading, error, sendRequest } = useHTTP()
+	const flagSrc = `/src/assets/flags/${languageId}.svg`
 	let titleStyle = ''
 
 	if (currentModeCtx.themeMode === 'dark') {
@@ -113,18 +114,22 @@ export default function UserLanguageTopics() {
 						mode={currentModeCtx.currentMode}
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1, transition: { duration: 0.6 } }}>
-						<h2 className={'topics__title flex items-center justify-center mt-10 text-[3.6rem] text-center font-medium text-[var(--titleBg)] max-[560px]:text-[2.8rem] max-[420px]:items-start max-[375px]:text-[2.6rem] max-[375px]:flex-col-reverse max-[375px]:items-center' + titleStyle}>
+						<h2
+							className={
+								'topics__title flex items-center justify-center mt-10 text-[3.6rem] text-center font-medium text-[var(--titleBg)] max-[560px]:text-[2.8rem] max-[420px]:items-start max-[375px]:text-[2.6rem] max-[375px]:flex-col-reverse max-[375px]:items-center' +
+								titleStyle
+							}>
 							Stwórz lub wybierz temat
 							<img
 								className='ml-5 w-[6rem] max-[560px]:w-[5rem] max-[375px]:w-[6rem]'
-								src={`/src/assets/flags/${languageId}.svg`}
+								src={flagSrc}
 								alt={`${languageId} Flag`}
 							/>
 						</h2>
 						{error && <p className='error-text my-[1.8rem] text-[2.4rem] ] text-center text-red-600'>{error}</p>}
 
 						<div className='flex flex-col w-[100vw] items-start'>
-							<CreateButton onClick={handleAddTopicFormState} className={'mx-[1rem]'}>
+							<CreateButton onClick={handleAddTopicFormState} className={'mx-[1rem]'} aria-label='Dodaj temat'>
 								<Plus width={'3rem'} height={'3rem'} fill={'var(--navLinks)'} />
 								<span className='mr-3'></span>
 								Dodaj Temat

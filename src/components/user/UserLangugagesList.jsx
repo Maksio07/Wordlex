@@ -19,6 +19,7 @@ export default function UserLanguageList({ languages, handleAddLanguageState, de
 				<button
 					onClick={handleAddLanguageState}
 					type='button'
+					aria-label='Dodaj język'
 					className={'create flex items-center justify-start w-full h-full bg-[var(--createBtn)] text-[var(--navLinks)] rounded-[.8rem] text-[2.6rem] min-[375px]:justify-center' + titleStyle}>
 					<Plus width={'3.2rem'} height={'3.2rem'} fill={'var(--navLinks)'}/>
 					<span className='mr-[1rem] max-[375px]:ml-[3rem] max-[460px]:ml-[-.4rem]'></span>
@@ -44,6 +45,7 @@ export default function UserLanguageList({ languages, handleAddLanguageState, de
 							</Link>
 							<button
 								type='button'
+								aria-label='Usuń'
 								className='created-language-deleteBtn absolute top-4 right-4 p-[.6rem] z-20'
 								onClick={deleteLanguage}>
 								<Delete width={'2.4rem'} height={'2.4rem'} fill={'var(--white)'}/>

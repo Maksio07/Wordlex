@@ -60,10 +60,10 @@ export default function WordsList({ words, userId, languageId, topicId, handleEd
 										id={word._id}
 										className='word__li  relative flex items-center my-[3rem] mr-[3rem] py-[.4rem] w-[38rem] h-[9.4rem] rounded-lg cursor-pointer bg-[var(--mobileNavBg)] max-[560px]:mx-0 max-[420px]:w-[35rem] max-[375px]:mr-[0] max-[375px]:w-[30rem]'
 										onClick={() => setWordId(word._id)}>
-										<button type='click' className='deteleTopic-btn' onClick={deleteWord}>
+										<button type='click' aria-label='Usuń' className='deteleTopic-btn' onClick={deleteWord}>
 											<Delete width={'2.4rem'} height={'2.4rem'} fill={'var(--navLinks)'} />
 										</button>
-										<button type='click' className='editTopic-btn' onClick={handleEditWordFormIsActive}>
+										<button type='click' aria-label='Edytuj' className='editTopic-btn' onClick={handleEditWordFormIsActive}>
 											<Edit width={'2.4rem'} height={'2.4rem'} stroke={'var(--navLinks)'} />
 										</button>
 										<Link

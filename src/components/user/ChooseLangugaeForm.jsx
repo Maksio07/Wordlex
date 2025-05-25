@@ -26,7 +26,11 @@ export default function ChooseLanguageForm({
 			onSubmit={submitTheLanguage}
 			buttonCaption={'Dodaj Język'}
 			title={'Wybierz Język'}>
-			<button type='button' className='create-collection__x-btn absolute' onClick={handleAddLanguageState}>
+			<button
+				type='button'
+				aria-label='Dodaj język'
+				className='create-collection__x-btn absolute'
+				onClick={handleAddLanguageState}>
 				<Xicon width={'2.8rem'} heigth={'2.8rem'} stroke={'var(--white)'} />
 			</button>
 			<p className='error-text mb-[.6rem] text-[1.8rem] ] text-center text-[#15e015e5]'>{confirmMessage}</p>
@@ -43,7 +47,7 @@ export default function ChooseLanguageForm({
 					{choosenLanguage !== '' && choosenLanguage.lastChild.innerHTML}
 				</p>
 
-				<button type='button' className='create__select-arrow'>
+				<button type='button' aria-label='Wybierz język' className='create__select-arrow'>
 					{selectIsActive ? (
 						<ArrowUp width={'2.4rem'} height={'2.4rem'} fill={'var(--titlebg)'} />
 					) : (

@@ -42,11 +42,11 @@ export default function WordControlls({
 
 	return (
 		<div className={controllsStyles}>
-			<CreateButton className=' w-[17rem] min-w-[14rem] bg-[var(--mobileNavBg)] hover:bg-[var(--elementsBackground)] max-[715px]:mb-[0rem] max-[715px]:mr-[0rem]'>
+			<CreateButton className=' w-[17rem] min-w-[14rem] bg-[var(--mobileNavBg)] hover:bg-[var(--elementsBackground)] max-[715px]:mb-[0rem] max-[715px]:mr-[0rem]' aria-label='Wróć'>
 				<Link to={`/users/${userId}/languages/${languageId}/topics/${topicId}`}>Wróć</Link>
 			</CreateButton>
 			{currentWord !== firstWord && (
-				<CreateButton className={buttonsStyles}>
+				<CreateButton className={buttonsStyles} aria-label='Poprzednie'>
 					<Link
 						to={`/users/${userId}/languages/${languageId}/topics/${topicId}/words/${previousWordId}`}
 						onClick={navigateToPreviousWord}>
@@ -54,7 +54,7 @@ export default function WordControlls({
 					</Link>
 				</CreateButton>
 			)}
-			<CreateButton className={buttonsStyles}>
+			<CreateButton className={buttonsStyles} aria-label='Następne'>
 				<Link
 					onClick={lastWord && wordId === lastWord._id ? handleEndModalActive : navigateToNextWord}
 					to={

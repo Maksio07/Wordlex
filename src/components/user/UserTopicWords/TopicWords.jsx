@@ -90,7 +90,7 @@ export default function TopicWords({ topicId, userId, languageId }) {
 							{topicName}
 						</h2>
 						{error && <p className='error-text my-[1.8rem] text-[2.4rem] ] text-center text-red-600'>{error}</p>}
-						<CreateButton onClick={handleAddWordFormIsActive} className={'mx-[1rem]'}>
+						<CreateButton onClick={handleAddWordFormIsActive} aria-label='Dodaj Słowo' className={'mx-[1rem]'}>
 							<Plus width={'3rem'} height={'3rem'} fill={'var(--navLinks)'} />
 							<span className='mr-3'></span>
 							Dodaj słowo

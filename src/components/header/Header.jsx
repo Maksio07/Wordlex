@@ -32,7 +32,7 @@ export default function Header() {
 						<p className={'hero__text__text mt-[4rem] text-4xl font-medium text-[var(--navLinks)] ' + textShadow}>
 							Po prostu załóż konto i zacznij dodawać słowa 😉
 						</p>
-						<button type='button' className={'hero__text__btn mt-[6rem] p-2 text-[2.2rem] text-[var(--navLinks)] ' + textShadow}>
+						<button type='button' aria-label='Zacznij' className={'hero__text__btn mt-[6rem] p-[2.4rem] text-[2.2rem] text-[var(--navLinks)] ' + textShadow}>
 							<NavLink to='/auth/login' className={({ isActive }) => (isActive ? 'active' : undefined)}>
 								Zacznij
 							</NavLink>

@@ -43,6 +43,7 @@ export default function WordData({ word }) {
 					)}
 					<Button
 						onClick={handleAnswerIsActiveState}
+						aria-label='pokaż/ukkryj odpowiedź'
 						className=' word-area__show-answer-btn mt-2 uppercase text-[1.6rem] bg-[var(--mobileNavBg)]'>
 						{answerIsActive ? 'ukryj odpowiedź' : 'pokaż odpowiedź'}
 					</Button>

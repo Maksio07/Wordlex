@@ -111,6 +111,7 @@ export default function ContactPage() {
 						<div className='contact__map--info-social-media flex flex-wrap max-[650px]:items-center max-[650px]:justify-center max-[300px]:flex-col'>
 							<button
 								type='button'
+								aria-label='Facebook'
 								className='mt-[3rem] px-[1.6rem] py-[.8rem] w-[14rem] rounded-lg bg-[var(--facebook)] max-[960px]:ml-[3rem]  max-[420px]:ml-[0] max-[323px]:ml-[3rem]  max-[300px]:ml-0 '>
 								<Link to='https://www.facebook.com' target='_blank' className='flex items-center justify-center'>
 									<Facebook fill='var(--white)' width='2rem' height='2rem' />
@@ -119,6 +120,7 @@ export default function ContactPage() {
 							</button>
 							<button
 								type='button'
+								aria-label='Linkedin'
 								className='mt-[3rem] ml-[3rem] px-[1.6rem] py-[.8rem] w-[14rem] rounded-lg bg-[var(--linkedin)] max-[300px]:ml-0 '>
 								<Link to='https://www.linkedin.com' target='_blank' className='flex items-center justify-center'>
 									<Linkedin fill='var(--white)' width='2rem' height='2rem' />
@@ -127,6 +129,7 @@ export default function ContactPage() {
 							</button>
 							<button
 								type='button'
+								aria-label='Instagram'
 								className='mt-[3rem] ml-[3rem] px-[1.6rem] py-[.8rem] w-[14rem] rounded-lg bg-[var(--instagram)] max-[420px]:ml-0 max-[323px]:ml-[3rem]  max-[300px]:ml-0 '>
 								<Link to='https://www.instagram.com' target='_blank' className='flex items-center justify-center'>
 									<Instagram fill='var(--white)' width='2rem' height='2rem' />
@@ -135,6 +138,7 @@ export default function ContactPage() {
 							</button>
 							<button
 								type='button'
+								aria-label='Telegram'
 								className='mt-[3rem] ml-[3rem] px-[1.6rem] py-[.8rem] w-[14rem] rounded-lg bg-[var(--telegram)] max-[300px]:ml-0'>
 								<Link to='https://www.telegram.org' target='_blank' className='flex items-center justify-center '>
 									<Telegram fill='var(--white)' width='2rem' height='2rem' />

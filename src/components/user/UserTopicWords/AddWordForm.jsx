@@ -70,7 +70,7 @@ export default function AddWordForm({ handleAddWordFormIsActive, topicId, langua
 					onSubmit={addNewWord}
 					title='Stwórz Słowo'
 					buttonCaption='Dodaj słowo'>
-					<button type='button' className='create-collection__x-btn absolute' onClick={handleAddWordFormIsActive}>
+					<button type='button' aria-label='Zamknij' className='create-collection__x-btn absolute' onClick={handleAddWordFormIsActive}>
 						<Xicon width={'2.8rem'} heigth={'2.8rem'} stroke={'var(--white)'}/>
 					</button>
 					{error && <p className='error-text mb-[1rem] text-[1.8rem] text-center text-red-600'>{error}</p>}

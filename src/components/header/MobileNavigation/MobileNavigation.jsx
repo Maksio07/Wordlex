@@ -51,7 +51,7 @@ export default function MobileNavigation({ navBg }) {
 					<li
 						className='absolute right-0 mr-8 top-[8rem]'
 						onClick={() => currentModeCtx.setThemeHandler(currentModeCtx.themeMode === 'light' ? 'dark' : 'light')}>
-						<button type='button' className='mode-icon cursor-pointer'>
+						<button type='button' className='mode-icon cursor-pointer' aria-label='Zmień kolor'>
 							{currentModeCtx.themeMode === 'light' ? (
 								<Moon width={'2.2rem'} heigth={'2.2rem'} fill={'var(--navLinks)'} />
 							) : (
@@ -62,6 +62,7 @@ export default function MobileNavigation({ navBg }) {
 					<button
 						type='button'
 						onClick={handleMobileNavigation}
+						aria-label='Zmień kolor'
 						className='nav-icon absolute right-0 top-5 mr-4 p-3 cursor-pointer'>
 						{mobileNavigationIsActive ? (
 							<Xicon width={'2.8rem'} heigth={'2.8rem'} stroke={'var(--navLinks)'} />
@@ -79,6 +80,7 @@ export default function MobileNavigation({ navBg }) {
 					</li>
 					<button
 						type='button'
+						aria-label='Zmień kolor'
 						onClick={handleMobileNavigation}
 						className='nav-icon absolute right-0 top-5 mr-4 p-3 cursor-pointer'>
 						{mobileNavigationIsActive ? (

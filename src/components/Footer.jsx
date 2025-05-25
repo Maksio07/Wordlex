@@ -61,6 +61,7 @@ export default function Footer() {
 					<div>
 						<button
 							type='button'
+							aria-label='Facebook'
 							className='ml-[2rem] p-[.6rem] border-solid border-[1px] border-[var(--white)] rounded-xl hover:scale-[1.12] transition-transform duration-300 max-[600px]:ml-0'>
 							<Link to='https://www.facebook.com' target='_blank'>
 								<Facebook height='2rem' width='2rem' fill='var(--white)' />
@@ -68,6 +69,7 @@ export default function Footer() {
 						</button>
 						<button
 							type='button'
+							aria-label='Linkedin'
 							className='ml-[2rem] p-[.6rem] border-solid border-[1px] border-[var(--white)] rounded-xl hover:scale-[1.12] transition-transform duration-300'>
 							<Link to='https://www.linkedin.com' target='_blank'>
 								<Linkedin height='2rem' width='2rem' fill='var(--white)' />
@@ -75,6 +77,7 @@ export default function Footer() {
 						</button>
 						<button
 							type='button'
+							aria-label='Instagram'
 							className='ml-[2rem] p-[.6rem] border-solid border-[1px] border-[var(--white)] rounded-xl hover:scale-[1.12] transition-transform duration-300'>
 							<Link to='https://www.instagram.com'>
 								<Instagram height='2rem' width='2rem' fill='var(--white)' />
@@ -82,6 +85,7 @@ export default function Footer() {
 						</button>
 						<button
 							type='button'
+							aria-label='Telegram'
 							className='ml-[2rem] p-[.6rem] border-solid border-[1px] border-[var(--white)] rounded-xl hover:scale-[1.12] transition-transform duration-300'>
 							<Link to='https://www.telegram.org' target='_blank'>
 								<Telegram height='2rem' width='2rem' fill='var(--white)' />

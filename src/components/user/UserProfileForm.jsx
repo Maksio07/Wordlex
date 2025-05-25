@@ -34,6 +34,7 @@ export default function UserProfileForm({
 					)}
 					<button
 						type='button'
+						aria-label='Edytuj'
 						className='flex items-center mr-[3rem] px-[1rem] py-[.4rem] border-solid border-[[var(--navLinks)] border-[.1rem] rounded-xl hover:scale-[1.12] transition-transform duration-300 max-[470px]:mr-0 max-[470px]:mt-[2rem]'
 						onClick={handleInputIsActive}>
 						<p className='mr-[.4rem] text-[var(--navLinks)] text-[1.4rem]'>
@@ -60,6 +61,7 @@ export default function UserProfileForm({
 					)}
 					<button
 						type='button'
+						aria-label='Edytuj'
 						className='flex items-center mr-[3rem] px-[1rem] py-[.4rem] border-solid border-[[var(--navLinks)] border-[.1rem] rounded-xl hover:scale-[1.12] transition-transform duration-300 max-[470px]:mr-0 max-[470px]:mt-[2rem]'
 						onClick={handleInputIsActive}>
 						<p className='mr-[.4rem] text-[var(--navLinks)] text-[1.4rem]'>
@@ -101,6 +103,7 @@ export default function UserProfileForm({
 					)}
 					<button
 						type='button'
+						aria-label='Edytuj'
 						className='flex items-center mr-[3rem] px-[1rem] py-[.4rem] border-solid border-[[var(--navLinks)] border-[.1rem] rounded-xl hover:scale-[1.12] transition-transform duration-300 max-[470px]:mr-0 max-[470px]:mt-[2rem]'
 						onClick={handleInputIsActive}>
 						<p className='mr-[.4rem] text-[var(--navLinks)] text-[1.4rem]'>

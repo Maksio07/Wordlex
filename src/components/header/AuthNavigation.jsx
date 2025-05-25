@@ -11,19 +11,19 @@ export default function AuthNavigation() {
 	const userId = useContext(IsUserAuthContext).userIDSession
 
 	return (
-		<div className='nav-items__links flex flex-row items-center min-h-full h-full w-full'>
-			<div className='flex justify-between w-full'>
+		<li className='nav-items__links flex flex-row items-center min-h-full h-full w-full'>
+			<ul className='flex justify-between w-full'>
 				<li className='profile-link text-3xl mx-[4.2rem] text-[var(--navLinks)]'>
 					<NavLink to={`/users/${userId}/profile`} className={({ isActive }) => (isActive ? 'active' : undefined)}>
 						Profil
 					</NavLink>
 				</li>
 				<Logout />
-			</div>
+			</ul>
 			<li
 				className='mr-[4.2rem]'
 				onClick={() => currentModeCtx.setThemeHandler(currentModeCtx.themeMode === 'light' ? 'dark' : 'light')}>
-				<button type='button' className='mode-icon cursor-pointer'>
+				<button type='button' className='mode-icon cursor-pointer' aria-label='Zmień kolor'>
 					{currentModeCtx.themeMode === 'light' ? (
 						<Moon width={'2.2rem'} heigth={'2.2rem'} fill={'var(--navLinks)'} />
 					) : (
@@ -31,6 +31,6 @@ export default function AuthNavigation() {
 					)}
 				</button>
 			</li>
-		</div>
+		</li>
 	)
 }

@@ -8,8 +8,8 @@ export default function NoAuthNavigation() {
 	const currentModeCtx = useContext(DarkModeContext)
 
 	return (
-		<div className='nav-items__links flex justify-between w-screen'>
-			<div className='nav-items__links--left flex flex-row items-center'>
+		<li className='nav-items__links flex justify-between w-screen'>
+			<ul className='nav-items__links--left flex flex-row items-center'>
 				<li className='home-link text-3xl mx-[4.2rem] text-[var(--navLinks)]'>
 					<NavLink to='/' className={({ isActive }) => (isActive ? 'active' : undefined)}>
 						Home
@@ -26,8 +26,8 @@ export default function NoAuthNavigation() {
 						Kontakt
 					</NavLink>
 				</li>
-			</div>
-			<div className='nav-items__links--right flex flex-row items-center'>
+			</ul>
+			<ul className='nav-items__links--right flex flex-row items-center'>
 				<li className='header__signup text-3xl mr-[4.2rem]'>
 					<NavLink to='/auth/signup' className={({ isActive }) => (isActive ? 'active' : undefined)}>
 						Signup
@@ -41,7 +41,7 @@ export default function NoAuthNavigation() {
 				<li
 					className='mr-[4.2rem]'
 					onClick={() => currentModeCtx.setThemeHandler(currentModeCtx.themeMode === 'light' ? 'dark' : 'light')}>
-					<button type='button' className='mode-icon cursor-pointer'>
+					<button type='button' className='mode-icon cursor-pointer' aria-label='Zmień kolor'>
 						{currentModeCtx.themeMode === 'light' ? (
 							<Moon width={'2.2rem'} heigth={'2.2rem'} fill={'var(--navLinks)'} />
 						) : (
@@ -49,7 +49,7 @@ export default function NoAuthNavigation() {
 						)}
 					</button>
 				</li>
-			</div>
-		</div>
+			</ul>
+		</li>
 	)
 }

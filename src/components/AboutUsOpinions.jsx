@@ -22,10 +22,10 @@ export default function AboutUsOpinions() {
 		<div className='about-us__opinions relative flex flex-col items-center justify-center mb-[6rem] w-full'>
 			<h2 className='mt-[6.2rem] mb-[3.2rem] text-center text-[3.6rem] font-medium text-[var(--titleBg)] max-[475px]:mt-[4rem]'>Opinie</h2>
 			<Opinions current={current} length={length}/>
-			<button type='button' onClick={nextSlide} className='carret-controlls absolute top-[60%] right-[12%] p-1 max-[1841px]:right-[6%] max-[1590px]:right-[1%] max-[898px]:left-[62%] max-[720px]:left-[85%]'>
+			<button type='button' onClick={nextSlide} aria-label='Następne' className='carret-controlls absolute top-[60%] right-[12%] p-1 max-[1841px]:right-[6%] max-[1590px]:right-[1%] max-[898px]:left-[62%] max-[720px]:left-[85%]'>
 				<span className='text-[4.8rem] text-[var(--titleBg)] font-normal'>&#62;</span>
 			</button>
-			<button type='button' onClick={prevSlide} className='carret-controlls absolute top-[60%] left-[12%] p-1 max-[1841px]:left-[6%] max-[1590px]:left-[1%] max-[898px]:right-[62%] max-[720px]:right-[85%]'>
+			<button type='button' onClick={prevSlide} aria-label='Poprzednie' className='carret-controlls absolute top-[60%] left-[12%] p-1 max-[1841px]:left-[6%] max-[1590px]:left-[1%] max-[898px]:right-[62%] max-[720px]:right-[85%]'>
 				<span className='text-[4.8rem] text-[var(--titleBg)] font-normal'>&#60;</span>
 			</button>
 		</div>

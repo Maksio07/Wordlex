@@ -25,12 +25,12 @@ export default function EndModal({ handleEndModalActive, words, userId, language
 					Wszystkie słowa z danego tematu zostały zrobione. Możesz zacząć od początku albo wrócić do innych tematów 😎
 				</p>
 				<div className='end-modal__controlls flex justify-evenly my-[2rem] max-[468px]:flex-col max-[468px]:items-center'>
-					<Button onClick={navigateToFirstWord}>
+					<Button onClick={navigateToFirstWord} aria-label='zacznij od początku'>
 						<Link to={`/users/${userId}/languages/${languageId}/topics/${topicId}/words/${firstWordId}`}>
 							Zacznij od początku
 						</Link>
 					</Button>
-					<Button onClick={handleEndModalActive}>
+					<Button onClick={handleEndModalActive} aria-label='Wróć do tematów'>
 						<Link to={`/users/${userId}/languages/${languageId}`}>Przejdź do tematów</Link>
 					</Button>
 				</div>

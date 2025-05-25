@@ -79,7 +79,7 @@ export default function EditWordForm({
 					onSubmit={editWord}
 					buttonCaption='Zmień słowo'
 					title='Edytuj Słowo'>
-					<button type='button' className='create-collection__x-btn absolute' onClick={handleEditWordFormIsActive}>
+					<button type='button' aria-label='Zamknij' className='create-collection__x-btn absolute' onClick={handleEditWordFormIsActive}>
 						<Xicon width={'2.8rem'} heigth={'2.8rem'} stroke={'var(--white)'}/>
 					</button>
 					{error && <p className='error-text mb-[1rem] text-[1.8rem] text-center text-red-600'>{error}</p>}

@@ -58,7 +58,7 @@ export default function EditTopicForm({
 					onSubmit={editTopic}
 					title='Zmień nazwę tematu'
 					buttonCaption='Zmień nazwę'>
-					<button type='button' className='create-collection__x-btn absolute' onClick={handleEditTopicFormState}>
+					<button type='button' aria-label='Zamknij' className='create-collection__x-btn absolute' onClick={handleEditTopicFormState}>
 						<Xicon width={'2.8rem'} heigth={'2.8rem'} stroke={'var(--white)'}/>
 					</button>
 					{error && <p className='error-text mb-[1.4rem] text-[1.8rem] text-center text-red-600'>{error}</p>}

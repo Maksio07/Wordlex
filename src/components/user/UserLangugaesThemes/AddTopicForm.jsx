@@ -56,7 +56,7 @@ export default function AddTopicForm({
 					onSubmit={addTopic}
 					title='Stwórz Temat'
 					buttonCaption='Dodaj temat'>
-					<button type='button' className='create-collection__x-btn absolute' onClick={handleAddTopicFormState}>
+					<button type='button' aria-label='Dodaj temat' className='create-collection__x-btn absolute' onClick={handleAddTopicFormState}>
 						<Xicon width={'2.8rem'} heigth={'2.8rem'} stroke={'var(--white)'}/>
 					</button>
 					{error && <p className='error-text mb-[1.4rem] text-[1.8rem] text-center text-red-600'>{error}</p>}

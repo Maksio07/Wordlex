@@ -65,10 +65,10 @@ export default function UserTopicsList({
 									id={topic.topicId}
 									className='topic-li relative flex flex-col justify-center my-[3rem] mr-[3rem] py-[.4rem] w-[38rem] h-[9.4rem] rounded-lg cursor-pointer bg-[var(--mobileNavBg)] max-[560px]:mx-0 max-[420px]:w-[35rem] max-[375px]:w-[30rem]'
 									onClick={() => setTopicId(topic.topicId)}>
-									<button type='click' onClick={deleteTopic} className='deteleTopic-btn'>
+									<button type='click' aria-label='Usuń' onClick={deleteTopic} className='deteleTopic-btn'>
 										<Delete width={'2.4rem'} height={'2.4rem'} fill={'var(--navLinks)'} />
 									</button>
-									<button type='click' className='editTopic-btn' onClick={handleEditTopicFormState}>
+									<button type='click' aria-label='Edytuj' className='editTopic-btn' onClick={handleEditTopicFormState}>
 										<Edit width={'2.4rem'} height={'2.4rem'} stroke={'var(--navLinks)'} />
 									</button>
 									<Link to={`/users/${userId}/languages/${languageId}/topics/${topicId}`}>
